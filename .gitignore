@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.env.local
+.env.*.local
+
+# Frontend
+node_modules/
+.next/
+out/
+build/
+.cache/
+dist/
+.env.local
+.env.*.local
+*.pem
+.vercel/
+.env
+.DS_Store
+*.pem
+.eslintcache
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Outputs
+results/
+outputs/
+*.csv
+*.json
+!package.json
+!tsconfig.json
+
+# Service worker
+service-worker.js
+workbox*.js

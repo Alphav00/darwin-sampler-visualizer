@@ -1,0 +1,88 @@
+.genealogy-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+.genealogy-tree {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+  padding: var(--spacing-m);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.tree-nodes {
+  display: flex;
+  gap: var(--spacing-m);
+  min-width: min-content;
+}
+
+.tree-node {
+  min-width: 150px;
+  padding: var(--spacing-m);
+  border-radius: var(--border-radius);
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+  touch-action: manipulation;
+}
+
+.tree-node:active {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow-md);
+}
+
+.tree-node.selected {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, #e3f2fd, #f0f8ff);
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-s);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.mutation-type {
+  color: var(--color-text);
+}
+
+.fitness-delta {
+  font-weight: bold;
+}
+
+.fitness-delta.positive {
+  color: var(--color-success);
+}
+
+.fitness-delta.negative {
+  color: var(--color-error);
+}
+
+.node-body {
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+}
+
+.edge-details {
+  padding: var(--spacing-m);
+  background: var(--color-surface);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-md);
+}
+
+.edge-details h3 {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.edge-details button {
+  margin-top: var(--spacing-m);
+  width: 100%;
+}

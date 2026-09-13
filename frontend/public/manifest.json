@@ -1,0 +1,49 @@
+{
+  "name": "Darwin Sampler Visualizer",
+  "short_name": "Darwin Lab",
+  "description": "Evolutionary prompt optimization with parameter stability measurement and genealogy visualization",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
+  "theme_color": "#0078d4",
+  "background_color": "#f5f5f5",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-540x720.png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Genealogy Tree",
+      "short_name": "Genealogy",
+      "description": "View prompt evolution genealogy",
+      "url": "/?view=genealogy",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Stability Matrix",
+      "short_name": "Stability",
+      "description": "View parameter stability measurements",
+      "url": "/?view=stability",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
